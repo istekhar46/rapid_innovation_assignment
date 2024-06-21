@@ -1,0 +1,59 @@
+section.Popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #24211da1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    z-index: 4;
+}
+
+.popup-wrapper {
+    width: 80%;
+    background: #24211D;
+    border-radius: 0.5rem;
+}
+.details-container {
+    padding: 2rem;
+    color: #FFFDFA;
+}
+.details-container h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+.details-container p {
+    font-size: 1.8rem;
+}
+.button-container {
+    padding: 0 2rem 2rem;
+}
+.button-container button {
+    background-color: #fdfdfde6;
+    color: #24211d;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.profile-banner-img-container {
+    object-fit: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 24rem;
+    padding: 2rem;
+    margin-bottom: 10rem;
+}
+.profile-banner-img-container figure img {
+    width: 20rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-bottom: -30rem;
+}
