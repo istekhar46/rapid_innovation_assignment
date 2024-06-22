@@ -33,7 +33,7 @@ const PopupWrapper = styled.div`
       color: #24211d;
     `}
     @media (max-width: 768px) {
-        width: 90%;
+        width: 92%;
        }
 `;
 
