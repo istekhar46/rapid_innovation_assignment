@@ -78,6 +78,7 @@ const Button = styled.button`
   border-radius: 3rem;
   font-size: 1.6rem;
   font-weight: 600;
+  color: #24211D;
   cursor: pointer;
   transition: background-color 0.3s ease;
 

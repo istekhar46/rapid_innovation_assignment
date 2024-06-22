@@ -1,5 +1,3 @@
-// categoryData.js
-
 import { Svg1, Svg2, Svg3, Svg4 } from './svgs';
 
 const categoryData = [
