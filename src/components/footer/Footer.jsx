@@ -68,7 +68,8 @@ const AdresssContaier = styled.div`
   ;
   p{
     font-weight: 200;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    font-size: 1.2rem;
   }
   `;
 
@@ -104,7 +105,8 @@ const Footer = () => {
         <AdresssContaier>
           <p> xyz International Pvt Ltd </p>
           <p> Noida, Uttar Pradesh-201009, India  </p>
-          <p> Phone: 90304 XXXXXMonday - Saturday: 10.00 AM to 8.00 PM</p>
+          <p> Phone: 90304 XXXXX </p>
+          <p>Monday - Saturday: 10.00 AM to 8.00 PM</p>
         </AdresssContaier>
       </QuickSocialContainer>
     </FooterContainer>
