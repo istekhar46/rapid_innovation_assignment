@@ -24,13 +24,13 @@ const PopupWrapper = styled.div`
   width: 80%;
   background: #24211d;
   border-radius: 0.5rem;
+  overflow: hidden;
 
   ${(props) =>
     props.theme === "light" &&
     css`
       background: #fffdfa;
       color: #24211d;
-      border: 1px solid #ccc;
     `}
     @media (max-width: 768px) {
         width: 90%;
