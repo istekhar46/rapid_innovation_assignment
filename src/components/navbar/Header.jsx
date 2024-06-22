@@ -20,7 +20,7 @@ const HeaderContainer = styled.header`
   ${(props) =>
     props.scrollPosition > 70 &&
     css`
-      background: #3b3b3b5c;  
+      background: #3b3b3b5c;
       backdrop-filter: blur(12px);
     `}
 
@@ -159,8 +159,11 @@ const HamburgerContainer = styled.div`
     align-items: flex-start;
     font-size: 3rem;
     cursor: pointer;
-    ${(props) => props.theme === "light" && css`
-    color: #3b3b3b;`}
+    ${(props) =>
+      props.theme === "light" &&
+      css`
+        color: #3b3b3b;
+      `}
   }
 `;
 
@@ -174,8 +177,11 @@ const CloseButton = styled.div`
     position: absolute;
     right: 2rem;
     top: 2rem;
-    ${(props) => props.theme === "light" && css`
-    color: #3b3b3b;`}
+    ${(props) =>
+      props.theme === "light" &&
+      css`
+        color: #3b3b3b;
+      `}
   }
 `;
 
@@ -264,22 +270,21 @@ const Header = () => {
 
         <NavLinksContainer isOpen={menuOpen} theme={theme}>
           <CloseButton onClick={toggleMenu} theme={theme}>
-            {" "}
-            <MdClose />{" "}
+            <MdClose />
           </CloseButton>
           <NavLinks>
             <NavLinkItem>
-              <NavLink to="/home" theme={theme}>
+              <NavLink to="/home" theme={theme} onClick={toggleMenu}>
                 Home
               </NavLink>
             </NavLinkItem>
             <NavLinkItem>
-              <NavLink to="/tasks" theme={theme}>
+              <NavLink to="/tasks" theme={theme} onClick={toggleMenu}>
                 Tasks
               </NavLink>
             </NavLinkItem>
             <NavLinkItem>
-              <NavLink to="/contact" theme={theme}>
+              <NavLink to="/contact" theme={theme} onClick={toggleMenu}>
                 Contact Us
               </NavLink>
             </NavLinkItem>
