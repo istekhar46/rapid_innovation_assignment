@@ -29,7 +29,7 @@ const QuickLinksContainer = styled.div`
   }
 
   ul li {
-    padding: 1rem 2rem;
+    padding: 0.5rem 0;
   }
 
   ul li a {
@@ -41,10 +41,10 @@ const QuickLinksContainer = styled.div`
 const QuickSocialContainer = styled.div`
   ul {
     list-style: none;
-    font-size: 2em;
+    font-size: 3rem;
     display: flex;
     gap: 2rem;
-    padding: 1rem 2rem;
+    padding: 0.5rem 0;
   }
 
   ul li a {
@@ -63,11 +63,11 @@ const NavLink = styled(Link)`
 `;
 
 const AdresssContaier = styled.div`
-  padding: 1rem 2rem;
+  padding: 0.5rem 0;
   color: #FFFDFA;
   ;
   p{
-    font-weight: 300;
+    font-weight: 200;
     letter-spacing: 1px
   }
   `;
