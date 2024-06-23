@@ -22,6 +22,7 @@ const HeaderContainer = styled.header`
     css`
       background: #3b3b3b5c;
       backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     `}
 
   ${(props) =>

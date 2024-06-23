@@ -11,6 +11,7 @@ const StyledPopup = styled.section`
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(12px);
   z-index: 4;
 
   ${(props) =>
@@ -38,12 +39,13 @@ const PopupWrapper = styled.div`
 `;
 
 const ProfileBannerImgContainer = styled.div`
-  object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 24rem;
   padding: 2rem;
   margin-bottom: 10rem;
+  background-size: cover;
+  -Webkit-background-size: cover;
 
   ${(props) =>
     props.theme === "light" &&
