@@ -18,7 +18,7 @@ const HeaderContainer = styled.header`
   z-index: 3;
 
   ${(props) =>
-    props.scrollPosition > 70 &&
+    props.scrollposition > 70 &&
     css`
       background: #3b3b3b5c;
       backdrop-filter: blur(12px);
@@ -65,9 +65,9 @@ const NavLinksContainer = styled.div`
     background: blueviolet;
     height: 100vh;
     transition: all 0.5s ease;
-    transform: ${({ isOpen }) =>
-      isOpen ? "translateX(0)" : "translateX(100%)"};
-    visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+    transform: ${({ isopen }) =>
+      isopen ? "translateX(0)" : "translateX(100%)"};
+    visibility: ${({ isopen }) => (isopen ? "visible" : "hidden")};
     ${(props) =>
       props.theme === "light" &&
       css`
@@ -190,7 +190,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.theme.mode);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollposition, setscrollposition] = useState(0);
 
   const handleToggleTheme = () => {
     dispatch(toggleTheme());
@@ -203,7 +203,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      setScrollPosition(position);
+      setscrollposition(position);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -213,7 +213,7 @@ const Header = () => {
   }, []);
 
   return (
-    <HeaderContainer theme={theme} scrollPosition={scrollPosition}>
+    <HeaderContainer theme={theme} scrollposition={scrollposition}>
       <Nav>
         <Link to="/home">
           <LogoContainer>
@@ -269,7 +269,7 @@ const Header = () => {
           </LogoContainer>
         </Link>
 
-        <NavLinksContainer isOpen={menuOpen} theme={theme}>
+        <NavLinksContainer isopen={menuOpen} theme={theme}>
           <CloseButton onClick={toggleMenu} theme={theme}>
             <MdClose />
           </CloseButton>
